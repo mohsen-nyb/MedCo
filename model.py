@@ -7,7 +7,7 @@ from pyhealth.tokenizer import Tokenizer
 import pandas as pd
 import numpy as np
 import torch.nn.functional as F
-from torch_geometric.nn import GATConv
+from torch_geometric.nn import GCNConv, GATConv, RGATConv, RGCNConv
 import os
 from transformers import AutoTokenizer, AutoModelForCausalLM, logging
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training, PeftModel
